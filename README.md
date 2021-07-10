@@ -1,4 +1,4 @@
-## Домашнее задания по курсу «Web, Spring & Spring MVC»
+## Домашнее задание по курсу «Web, Spring & Spring MVC»
 
 ### Блок 1: Web
 
