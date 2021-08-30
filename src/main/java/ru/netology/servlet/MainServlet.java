@@ -1,15 +1,19 @@
 package ru.netology.servlet;
 
+
+
 import ru.netology.controller.PostController;
 import ru.netology.repository.PostRepository;
 import ru.netology.service.PostService;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+@WebServlet(name = "main-servlet", value = "/api/posts")
 public class MainServlet extends HttpServlet {
 
     private PostController controller;
@@ -24,54 +28,37 @@ public class MainServlet extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) {
-        try {
-            final var path = req.getRequestURI();
-            if (path.equals(API_PATH)) {
-                controller.all(resp);
-                return;
-            }
-            if (path.matches(API_PATH_WITH_NUMBERS)) {
-                final var id = Long.parseLong(path.substring(path.lastIndexOf("/")));
-                controller.getById(id, resp);
-                return;
-            }
-            super.doGet(req, resp);
-        } catch (IOException | NumberFormatException | ServletException e) {
-            e.printStackTrace();
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+        final var path = req.getRequestURI();
+        if (path.equals(API_PATH)) {
+            controller.all(resp);
+            return;
         }
+        if (path.matches(API_PATH_WITH_NUMBERS)) {
+            final var id = Long.parseLong(path.substring(path.lastIndexOf("/")));
+            controller.getById(id, resp);
+            return;
+        }
+        super.doGet(req, resp);
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
-        try {
-            if (req.getRequestURI().equals(API_PATH)) {
-                controller.save(req.getReader(), resp);
-                return;
-            }
-            super.doPost(req, resp);
-        } catch (IOException | ServletException e) {
-            e.printStackTrace();
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+        if (req.getRequestURI().equals(API_PATH)) {
+            controller.save(req.getReader(), resp);
+            return;
         }
+        super.doPost(req, resp);
     }
 
     @Override
-    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) {
-        try {
-            final var path = req.getRequestURI();
-            if (req.getRequestURI().matches(API_PATH_WITH_NUMBERS)) {
-                final var id = Long.parseLong(path.substring(path.lastIndexOf("/")));
-                controller.removeById(id, resp);
-                return;
-            }
-            super.doDelete(req, resp);
-        } catch (NumberFormatException | ServletException | IOException e) {
-            e.printStackTrace();
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        final var path = req.getRequestURI();
+        if (req.getRequestURI().matches(API_PATH_WITH_NUMBERS)) {
+            final var id = Long.parseLong(path.substring(path.lastIndexOf("/")));
+            controller.removeById(id, resp);
+            return;
         }
-    }
-
-    @Override
-    public void destroy() {
-        super.destroy();
+        super.doDelete(req, resp);
     }
 }
