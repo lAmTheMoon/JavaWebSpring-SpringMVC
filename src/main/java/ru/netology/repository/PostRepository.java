@@ -2,10 +2,7 @@ package ru.netology.repository;
 
 import ru.netology.model.Post;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -15,11 +12,12 @@ public class PostRepository {
     private AtomicLong id = new AtomicLong(0);
 
     public List<Post> all() {
-        return Collections.emptyList();
+        if (posts.isEmpty()) return Collections.emptyList();
+        return new ArrayList<>(posts.values());
     }
 
     public Optional<Post> getById(long id) {
-        return Optional.empty();
+        return Optional.of(posts.get(id));
     }
 
     public Post save(Post post) {

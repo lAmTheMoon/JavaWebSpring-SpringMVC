@@ -1,0 +1,398 @@
+GET http://localhost:8080/api/posts/6
+
+<> 2021-08-30T095054.500.html
+
+###
+
+GET http://localhost:8080/api/posts
+
+<> 2021-08-30T095048.200.json
+
+###
+
+POST http://localhost:8080/api/posts/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "content": "Super Post"
+}
+
+<> 2021-08-30T095044.200.json
+
+###
+
+DELETE http://localhost:8080/api/posts/2
+
+<> 2021-08-30T095037.200.json
+
+###
+
+GET http://localhost:8080/api/posts/1
+
+<> 2021-08-30T095031.200.json
+
+###
+
+GET http://localhost:8080/api/posts
+
+<> 2021-08-30T095021.200.json
+
+###
+
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+  "id": 0,
+  "content": "Last Post"
+}
+
+<> 2021-08-30T095019.200.json
+
+###
+
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+  "id": 0,
+  "content": "New Post"
+}
+
+<> 2021-08-30T095016.200.json
+
+###
+
+GET http://localhost:8080/api/posts
+
+<> 2021-08-30T095013.200.json
+
+###
+
+GET http://localhost:8080/api/posts/6
+
+<> 2021-08-30T094039.200.json
+
+###
+
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+  "id": 0,
+  "content": "Last Post"
+}
+
+<> 2021-08-30T094031.200.json
+
+###
+
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+  "id": 0,
+  "content": "New Post"
+}
+
+<> 2021-08-30T094024.200.json
+
+###
+
+GET http://localhost:8080/api/posts
+
+<> 2021-08-30T094018.200.json
+
+###
+
+GET http://localhost:8080/api/posts
+
+<> 2021-08-30T093737.200.json
+
+###
+
+POST http://localhost:8080/api/posts/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "content": "Super Post"
+}
+
+<> 2021-08-30T093734.200.json
+
+###
+
+DELETE http://localhost:8080/api/posts/2
+
+<> 2021-08-30T093725.200.json
+
+###
+
+GET http://localhost:8080/api/posts/1
+
+<> 2021-08-30T093721.200.json
+
+###
+
+GET http://localhost:8080/api/posts
+
+<> 2021-08-30T093708.200.json
+
+###
+
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+  "id": 0,
+  "content": "Last Post"
+}
+
+<> 2021-08-30T093706.200.json
+
+###
+
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+  "id": 0,
+  "content": "New Post"
+}
+
+<> 2021-08-30T093704.200.json
+
+###
+
+GET http://localhost:8080/api/posts
+
+<> 2021-08-30T093658.200.json
+
+###
+
+GET http://localhost:8080/api/posts/1
+
+<> 2021-08-30T093556.200.json
+
+###
+
+POST http://localhost:8080/api/posts/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "content": "Super Post"
+}
+
+<> 2021-08-30T093545.200.json
+
+###
+
+DELETE http://localhost:8080/api/posts/2
+
+<> 2021-08-30T092222.200.json
+
+###
+
+GET http://localhost:8080/api/posts/1
+
+<> 2021-08-30T092210.200.json
+
+###
+
+GET http://localhost:8080/api/posts
+
+<> 2021-08-30T092206.200.json
+
+###
+
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+  "id": 0,
+  "content": "Last Post"
+}
+
+<> 2021-08-30T092200.200.json
+
+###
+
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+  "id": 0,
+  "content": "New Post"
+}
+
+<> 2021-08-30T092153.200.json
+
+###
+
+GET http://localhost:8080/api/posts
+
+<> 2021-08-30T092150.200.json
+
+###
+
+GET http://localhost:8080/api/posts/5
+
+<> 2021-08-30T090817.200.json
+
+###
+
+GET http://localhost:8080/api/posts/2
+
+<> 2021-08-30T090811.200.json
+
+###
+
+GET http://localhost:8080/api/posts/1
+
+<> 2021-08-30T090750.200.json
+
+###
+
+GET http://localhost:8080/api/posts
+
+<> 2021-08-30T090747.200.json
+
+###
+
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+  "id": 0,
+  "content": "Last Post"
+}
+
+<> 2021-08-30T090743.200.json
+
+###
+
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+  "id": 0,
+  "content": "New Post"
+}
+
+<> 2021-08-30T090741.200.json
+
+###
+
+GET http://localhost:8080/api/posts
+
+<> 2021-08-30T090739.200.json
+
+###
+
+GET http://localhost:8080/api/posts
+
+<> 2021-08-30T090642.200.json
+
+###
+
+GET http://localhost:8080/api/posts/1
+
+<> 2021-08-30T085422.500.html
+
+###
+
+GET http://localhost:8080/api/posts
+
+<> 2021-08-30T085410.200.json
+
+###
+
+GET http://localhost:8080/api/posts/1
+
+<> 2021-08-30T081731.500.html
+
+###
+
+GET http://localhost:8080/api/posts
+
+<> 2021-08-30T081728.200.json
+
+###
+
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+  "id": 0,
+  "content": "Last Post"
+}
+
+<> 2021-08-30T081719.200.json
+
+###
+
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+  "id": 0,
+  "content": "New Post"
+}
+
+<> 2021-08-30T081717.200.json
+
+###
+
+GET http://localhost:8080/api/posts
+
+<> 2021-08-30T081714.200.json
+
+###
+
+GET http://localhost:8080/api/posts/1
+
+###
+
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+  "id": 0,
+  "content": "Last Post"
+}
+
+<> 2021-08-30T081325.200.json
+
+###
+
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+  "id": 0,
+  "content": "New Post"
+}
+
+<> 2021-08-30T081323.200.json
+
+###
+
+GET http://localhost:8080/api/posts
+
+<> 2021-08-30T081320.200.json
+
+###
+
+GET http://localhost:8080/api/posts
+
+<> 2021-08-30T080947.404.html
+
+###
+
+GET http://localhost:8080/api/posts/1
+
+###
+
