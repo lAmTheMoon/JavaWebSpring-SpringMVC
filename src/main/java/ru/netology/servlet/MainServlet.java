@@ -27,7 +27,7 @@ public class MainServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         final var path = req.getRequestURI();
         if (Pattern.matches(API_PATH_WITH_NUMBERS, path)) {
-            final var id = Long.parseLong(path.replaceAll("[^0-9]", ""));
+            final var id = extractId(path);
             controller.getById(id, resp);
             return;
         }
@@ -43,8 +43,13 @@ public class MainServlet extends HttpServlet {
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         final var path = req.getRequestURI();
         if (Pattern.matches(API_PATH_WITH_NUMBERS, path)) {
-            final var id = Long.parseLong(path.replaceAll("[^0-9]", ""));
+            final var id = extractId(path);
             controller.removeById(id, resp);
         }
+    }
+
+    private long extractId(String path) {
+        String NUMBER_PATTERN = "[^0-9]";
+        return Long.parseLong(path.replaceAll(NUMBER_PATTERN, ""));
     }
 }
