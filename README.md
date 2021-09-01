@@ -2,4 +2,4 @@
 
 ### Блок 2: Java EE, Java Servlets
 
-2.1. [Servlet Containers](https://github.com/lAmTheMoon/JavaWebSpring-SpringMVC/tree/hw_03)
+2.3. [Spring Web MVC](https://github.com/lAmTheMoon/JavaWebSpring-SpringMVC/tree/hw_05)
