@@ -8,6 +8,7 @@ import lombok.Setter;
 public class Post {
     private long id;
     private String content;
+    private boolean isRemoved;
 
     public Post() {
     }
@@ -15,9 +16,10 @@ public class Post {
     public Post(long id, String content) {
         this.id = id;
         this.content = content;
+        isRemoved = false;
     }
 
     public Post createNew(Long id) {
-        return new Post(id, this.content);
+        return new Post(id, content);
     }
 }
