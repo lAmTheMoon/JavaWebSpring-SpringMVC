@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import ru.netology.model.Post;
 import ru.netology.service.PostService;
 
+
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.Reader;
@@ -29,7 +30,6 @@ public class PostController {
     public void getById(long id, HttpServletResponse response) throws IOException {
         response.setContentType(APPLICATION_JSON);
         final var data = service.getById(id);
-        System.out.println(data);
         final var gson = new Gson();
         response.getWriter().print(gson.toJson(data));
     }
