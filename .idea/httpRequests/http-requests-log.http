@@ -1,3 +1,27 @@
+DELETE http://localhost:8080/api/posts/2
+
+<> 2021-09-01T040037.500.html
+
+###
+
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+
+{
+  "id": 0,
+  "content": "New Post"
+}
+
+<> 2021-09-01T040036.200.json
+
+###
+
+GET http://localhost:8080/api/posts
+
+<> 2021-09-01T040034.200.json
+
+###
+
 GET http://localhost:8080/api/posts
 
 <> 2021-09-01T034546.200.json
@@ -323,30 +347,6 @@ GET http://localhost:8080/api/posts
 GET http://localhost:8080/api/posts
 
 <> 2021-09-01T005638.200.json
-
-###
-
-GET http://localhost:8080/api/posts
-
-<> 2021-09-01T005538.200.json
-
-###
-
-POST http://localhost:8080/api/posts/1
-Content-Type: application/json
-
-{
-  "id": 1,
-  "content": "Super Post"
-}
-
-<> 2021-09-01T005535.200.json
-
-###
-
-DELETE http://localhost:8080/api/posts/2
-
-<> 2021-09-01T005531.200.json
 
 ###
 
